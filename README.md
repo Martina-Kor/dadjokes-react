@@ -1,2 +1,2 @@
 # dadjokes-react
-Ex. # 14 (Czechitas DA WEB CB 2021)
+Exercises # 14, 15 (Test, Czechitas DA WEB CB 2021)
