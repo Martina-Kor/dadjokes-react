@@ -2,8 +2,8 @@ import React from 'react';
 import { render } from 'react-dom';
 import './style.css';
 
-/* import { jokes } from './jokes'; */
 import { Joke } from './Joke';
+import { jokes } from './jokes';
 
 const joke1 = {
   id: 'user01',
