@@ -6,7 +6,7 @@ export const Jokes = (props) => {
     <>
       <h2>Vtipy</h2>
       <ul>
-        {props.seznamVtipu.map((joke, index) => {
+        {props.listOfJokes.map((joke, index) => {
           return <Joke {...joke} key={joke.index} />;
         })}
       </ul>
