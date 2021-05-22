@@ -1,24 +1,5 @@
 import React, { useState } from 'react';
 
-/*
-let upLikes = 0;
-let downLikes = 0;
-
-const btnUp = document.querySelector('#btn-up');
-const btnDown = document.querySelector('#btn-down');
-
-btnUp.addEventListener('click', () => {
-  upLikes += 1;
-  const likesUpElm = document.querySelector('#likes-up');
-  likesUpElm.textContent = upLikes;
-});
-
-btnDown.addEventListener('click', () => {
-  downLikes += 1;
-  const likesDownElm = document.querySelector('#likes-down');
-  likesDownElm.textContent = downLikes;
-}); */
-
 export const Joke = (props) => {
   const [upLikes, setUpLikes] = useState(0);
   const [downLikes, setDownLikes] = useState(0);
@@ -39,10 +20,10 @@ export const Joke = (props) => {
             {/*             {props.joke.id} */}
             <img
               className="user-avatar"
-              src={props.joke.avatar ? props.joke.avatar : null}
-              alt={`Tady má být avatar ${props.joke.avatar}`}
+              src={props.joke.userAvatar ? props.joke.userAvatar : null}
+              alt={`Tady má být avatar.`}
             />
-            <p className="user-name">{props.joke.name}</p>
+            <p className="user-name">{props.joke.userName}</p>
           </div>
 
           <p className="joke__text">{props.joke.text}</p>

@@ -7,9 +7,9 @@ import { Joke } from './Joke';
 
 const joke1 = {
   id: 'user01',
-  avatar:
+  userAvatar:
     'https://raw.githubusercontent.com/Czechitas-podklady-WEB/dadjokes/main/users/user01.png',
-  name: 'Neroxx',
+  userName: 'Neroxx',
   text: 'The secret service isn\'t allowed to yell "Get down!" anymore when the president is about to be attacked. Now they have to yell "Donald, duck!"',
   likes: 13,
   dislikes: 24,
@@ -17,9 +17,9 @@ const joke1 = {
 
 const joke2 = {
   id: 'user01',
-  avatar:
+  userAvatar:
     'https://raw.githubusercontent.com/Czechitas-podklady-WEB/dadjokes/main/users/user01.png',
-  name: 'Neroxx',
+  userName: 'Neroxx',
   text: 'The secret service isn\'t allowed to yell "Get down!" anymore when the president is about to be attacked. Now they have to yell "Donald, duck!"',
   likes: 13,
   dislikes: 24,
