@@ -18,16 +18,16 @@ export const Joke = (props) => {
       <div className="joke">
         <div className="joke__body">
           <div className="joke__user">
-            {/*             {props.joke.id} */}
+            {/*             {props.id} */}
             <img
               className="user-avatar"
-              src={props.joke.userAvatar ? props.joke.userAvatar : null}
+              src={props.userAvatar ? props.userAvatar : null}
               alt={`Tady má být avatar.`}
             />
-            <p className="user-name">{props.joke.userName}</p>
+            <p className="user-name">{props.userName}</p>
           </div>
 
-          <p className="joke__text">{props.joke.text}</p>
+          <p className="joke__text">{props.text}</p>
         </div>
         <div className="joke__likes">
           <button

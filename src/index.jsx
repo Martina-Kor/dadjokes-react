@@ -5,25 +5,7 @@ import './style.css';
 import { Joke } from './Joke';
 import { jokes } from './jokes';
 
-const joke1 = {
-  id: 'user01',
-  userAvatar:
-    'https://raw.githubusercontent.com/Czechitas-podklady-WEB/dadjokes/main/users/user01.png',
-  userName: 'Neroxx',
-  text: 'The secret service isn\'t allowed to yell "Get down!" anymore when the president is about to be attacked. Now they have to yell "Donald, duck!"',
-  likes: 13,
-  dislikes: 24,
-};
-
-const joke2 = {
-  id: 'user01',
-  userAvatar:
-    'https://raw.githubusercontent.com/Czechitas-podklady-WEB/dadjokes/main/users/user01.png',
-  userName: 'Neroxx',
-  text: 'The secret service isn\'t allowed to yell "Get down!" anymore when the president is about to be attacked. Now they have to yell "Donald, duck!"',
-  likes: 13,
-  dislikes: 24,
-};
+/* console.log(jokes); */
 
 const App = () => {
   return (
@@ -31,13 +13,23 @@ const App = () => {
       <header>
         <h1>Vtipy</h1>
       </header>
-      <main>
-        <Joke joke={joke1} />
-        {/*         <Joke joke={joke2} /> */}
-        {/*   <Jokes listOfJokes={DUMMY_JOKES} /> */}
-      </main>
+      {
+        <main>
+          {jokes.map((joke, index) => {
+            return (
+              <Joke
+                key={joke.id}
+                userAvatar={joke.userAvatar}
+                userName={joke.userName}
+                text={joke.text}
+                likes={joke.likes}
+                dislikes={joke.dislikes}
+              />
+            );
+          })}
+        </main>
+      }
     </div>
   );
 };
-
 render(<App />, document.querySelector('#app'));
