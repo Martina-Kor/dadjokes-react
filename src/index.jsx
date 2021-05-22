@@ -41,37 +41,3 @@ const App = () => {
 };
 
 render(<App />, document.querySelector('#app'));
-
-{
-  /*  const App = () => {
-  return (
-    <div className="container">
-      <header>
-        <h1>Filmotéka</h1>
-      </header>
-      <main>
-        <Movies seznamFilmu={DUMMY_JOKES} />
-        <AddMovie />
-      </main>
-    </div>
-  );
-}; 
- */
-}
-
-{
-  /* const App = () => {
-  return (
-    <div className="container">
-      <header>
-        <h1>Filmotéka</h1>
-      </header>
-      <main>
-        <Movies seznamFilmu={DUMMY_MOVIES} />
-        <AddMovie />
-      </main>
-    </div>
-  );
-};
- */
-}
