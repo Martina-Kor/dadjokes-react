@@ -36,7 +36,7 @@ export const Joke = (props) => {
             onClick={handleUpLikes}
           ></button>
           <span id="likes-up" className="likes-count likes-count--up">
-            {upLikes}
+            {props.likes}
           </span>
           <button
             id="btn-down"
@@ -44,7 +44,7 @@ export const Joke = (props) => {
             onClick={handleDownLikes}
           ></button>
           <span id="likes-down" className="likes-count likes-count--down">
-            {downLikes}
+            {props.dislikes}
           </span>
         </div>
       </div>
